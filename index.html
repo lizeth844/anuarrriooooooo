@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anuario Escolar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Patrick+Hand&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="barra">
+    <button id="editar" class="btn">✏️ Editar esta página</button>
+    <button id="exportar" class="btn">⬇️ Exportar datos</button>
+    <button id="restablecer" class="btn">↺ Restablecer</button>
+    <input type="file" id="archivo" accept="image/*" hidden>
+  </div>
+
+  <main class="libro">
+    <button id="anterior" class="nav" aria-label="Página anterior">‹</button>
+
+    <div class="marco" id="marco">
+      <div class="escala" id="escala">
+        <article class="pagina" id="pagina"></article>
+      </div>
+    </div>
+
+    <button id="siguiente" class="nav" aria-label="Página siguiente">›</button>
+  </main>
+
+  <p class="contador" id="contador"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
